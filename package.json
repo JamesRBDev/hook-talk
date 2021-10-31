@@ -1,0 +1,20 @@
+{
+  "name": "hook-talk",
+  "version": "1.0.0",
+  "description": "A client for talking through Discord webhooks.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "discord",
+    "webhook"
+  ],
+  "author": "James Boehme",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.3.0",
+    "express": "^4.17.1",
+    "socket.io": "^4.3.1"
+  }
+}
