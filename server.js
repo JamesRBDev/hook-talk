@@ -37,7 +37,7 @@ process.on('uncaughtException', function (err) {
 app.use(express.static("public"));
 
 // Start the server listening for requests.
-let server = app.listen(process.env.PORT || 3000, () => console.log("SERVER OPEN ON PORT " + (process.env.PORT || 3000)));
+let listenServer = server.listen(process.env.PORT || 3000, () => console.log("SERVER OPEN ON PORT " + (process.env.PORT || 3000)));
 
 // Socket handling. On connection.
 io.on('connection', (socket) => {
@@ -56,13 +56,13 @@ io.on('connection', (socket) => {
 
 // Shuts down the server.
 function shutdown() {
-	if (!server || server.closing) {
+	if (!listenServer || listenServer.closing) {
 		console.log("Shutdown forced.");
 		process.exit(42);
 	} else {
 		console.log('Shutting down...');
 		// Close server.
-		server.close(() => {
+		listenServer.close(() => {
 			// Close process with success.
 			console.log("Server shut down.");
 			process.exit(0);

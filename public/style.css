@@ -50,3 +50,15 @@ button {
 	border-radius:    10px;
 	color:            #DCDDDE;
 }
+
+button:hover {
+	background-color: #2E3035;
+}
+
+#title {
+	position: absolute;
+	width: 400px;
+	text-align: center;
+	color: #DCDDDE;
+	margin-top: 0px;
+}

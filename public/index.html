@@ -19,14 +19,16 @@
 
 <body>
 	<div id="main">
+		<h1 id="title">Hook Talk</h1>
+		
 		<div class="window" id="window-connect">
 			<input id="url" placeholder="Webhook URL" autocomplete="off"></input>
-			<button id="connect">Connect</button>
+			<button id="connect" onclick="connect();">Connect</button>
 		</div>
 
 		<div class="window" id="window-talk" hidden>
 			<input id="text" placeholder="Message" autocomplete="off"></input>
-			<button id="send">Send</button>
+			<button id="send" onclick="send();">Send</button>
 		</div>
 	</div>
 </body>
