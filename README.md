@@ -1,2 +1,2 @@
-# hook-talk
-Allows you to talk as any Discord webhook, provided you have its url.
+# Hook Talk
+A small web application that allows you to input the URL for any Discord webhook and send messages as it.
