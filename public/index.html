@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hook Talk</title>
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link defer rel="stylesheet" href="style.css">
+
+	<script defer src="/socket.io/socket.io.js"></script>
+	<script defer src="script.js"></script>
+	
+</head>
+
+<body>
+	<div id="main">
+		<div class="window" id="window-connect">
+			<input id="url" placeholder="Webhook URL" autocomplete="off"></input>
+			<button id="connect">Connect</button>
+		</div>
+
+		<div class="window" id="window-talk" hidden>
+			<input id="text" placeholder="Message" autocomplete="off"></input>
+			<button id="send">Send</button>
+		</div>
+	</div>
+</body>
+
+</html>
